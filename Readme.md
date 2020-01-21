@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Юлия Калганова](https://up.htmlacademy.ru/htmlcss/27/user/972629).
-* Наставник: `Сергей Зубов`(https://htmlacademy.ru/profile/serj)
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
