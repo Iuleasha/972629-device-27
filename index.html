@@ -41,7 +41,7 @@
 </header>
 <main>
   <section>
-    <h2>Описание палки для сэлфи</h2>
+    <h2 class="visually-hidden">Описание палки для сэлфи</h2>
     <div>
       <div>
         <img src="img/selfie-stick.img.jpg" width="384" height="486" alt="Самая длинная палка для селфи ">
@@ -74,7 +74,7 @@
     </div>
   </section>
   <section>
-    <h2>Каталог товаров</h2>
+    <h2 class="visually-hidden">Каталог товаров</h2>
     <ul>
       <li>
         <a href="#">
@@ -123,14 +123,15 @@
     </div>
     <div>
       <h2>Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+        поднимая его на ваш этаж.</p>
       <div>
         <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
       </div>
     </div>
   </section>
   <section>
-    <h2>Партнеры</h2>
+    <h2 class="visually-hidden">Партнеры</h2>
     <div>
       <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="Логотип партнера"></a>
     </div>
@@ -148,7 +149,8 @@
     <div>
       <h2>О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+        компаниями:</p>
       <ul>
         <li>Деловые Линии</li>
         <li>Автотрейдин</li>
@@ -158,11 +160,41 @@
     </div>
     <div>
       <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
+        бывает.</p>
       <div>
-        <img src="img/map.jpg" width="560" height="222" alt="Карта">
+        <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, строение 15, город Москва">
+        <section>
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <button type="button">Закрыть</button>
+          <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, строение 15, город Москва">
+        </section>
       </div>
       <a href="#">Напишите нам</a>
+      <section>
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <div>
+          <button type="button">Закрыть</button>
+          <form class="feedback" action="#" method="post">
+            <p>
+              <label for="feedback-name">Ваше имя:
+                <input type="text" id="feedback-name" name="feedback-name" placeholder="Имя Фамилия">
+              </label>
+            </p>
+            <p>
+              <label for="feedback-email">Ваш e-mail:
+                <input type="email" id="feedback-email" name="feedback-email" placeholder="email@example.com">
+              </label>
+            </p>
+            <p>
+              <label for="feedback-text">Текст письма:
+                <textarea id="feedback-text" name="feedback-text">В свободной форме</textarea>
+              </label>
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
     </div>
   </section>
 </main>
@@ -204,7 +236,25 @@
 <section>
   <h2>Личный кабинет</h2>
   <p>Введите свой логин и пароль.</p>
-  <!-- Здесь будет форма -->
+  <form class="login-form" action="#" method="post">
+    <p>
+      <label for="login">Логин
+        <input type="text" name="login" placeholder="Логин" id="login">
+      </label>
+    </p>
+    <p>
+      <label for="password">Пароль
+        <input type="password" name="password" placeholder="Пароль" id="password">
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" name="remember">Запомните меня
+      </label>
+      <a href="#">Забыли пароль</a>
+    </p>
+    <button type="submit">Войти</button>
+  </form>
   <button type="button">Закрыть</button>
 </section>
 </body>
