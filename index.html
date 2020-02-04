@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main-page.css" rel="stylesheet">
 </head>
 <body>
 <header>
-  <div>
+  <div class="header-navigation">
     <img src="img/logo.svg" width="163" height="35" alt="Логотип">
     <ul>
       <li>
@@ -21,10 +23,10 @@
     </ul>
   </div>
   <nav>
-    <ul>
+    <ul class="header-catalog">
       <li>
         <a href="catalog.html">Каталог товаров<img src="img/plus.png" width="16" height="16" alt="Каталог"></a>
-        <ul>
+        <ul class="catalog-hidden">
           <li><a href="#">Виртуальная реальность</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
@@ -47,7 +49,7 @@
         <img src="img/selfie-stick.img.jpg" width="384" height="486" alt="Самая длинная палка для селфи ">
       </div>
       <div>
-        <h2>Делай селфи,<br> как Бен Стиллер!</h2>
+        <h2 class="selfie-tittle">Делай селфи,<br> как Бен Стиллер!</h2>
         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a href="#">Подробнее</a>
         <div>
@@ -156,12 +158,12 @@
       <h2>О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul>
+      <ul class="trans-company">
         <li>Деловые Линии</li>
         <li>Автотрейдин</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="#">Подробнее о нас</a>
+      <a class="about-us" href="#">Подробнее о нас</a>
     </div>
     <div>
       <h2>Контакты</h2>
@@ -174,7 +176,7 @@
           <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, строение 15, город Москва">
         </section>
       </div>
-      <a href="#">Напишите нам</a>
+      <a class="write-us" href="#">Напишите нам</a>
       <section>
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <div>
@@ -197,7 +199,7 @@
   </section>
 </main>
 <footer>
-  <div>
+  <div class="footer-nav">
     <img src="img/logo.svg" width="163" height="35" alt="Логотип">
     <ul>
       <li>
@@ -213,7 +215,7 @@
   </div>
   <div>
     <p>г. Москва, ул. Строителей, 15</p>
-    <ul>
+    <ul class="footer-menu">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
@@ -221,7 +223,7 @@
     <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
   </div>
   <div>
-    <ul>
+    <ul class="socials">
       <li><a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Facebook">Facebook</a>
       </li>
       <li><a href="#"><img src="img/insta.svg" width="32" height="32" alt="Instagram">Instagram</a></li>

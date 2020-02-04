@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main-page.css" rel="stylesheet">
 </head>
 <body>
 <header>
-  <div>
+  <div class="header-navigation">
     <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
     <ul>
       <li>
@@ -22,10 +24,10 @@
     </ul>
   </div>
   <nav>
-    <ul>
+    <ul class="header-catalog">
       <li>
         <a href="catalog.html">Каталог товаров<img src="img/plus.png" width="16" height="16" alt="Каталог"></a>
-        <ul>
+        <ul class="catalog-hidden">
           <li><a href="#">Виртуальная реальность</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
@@ -166,7 +168,7 @@
   </section>
 </main>
 <footer>
-  <div>
+  <div class="footer-nav">
     <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
     <ul>
       <li>
@@ -183,7 +185,7 @@
   </div>
   <div>
     <p>г. Москва, ул. Строителей, 15</p>
-    <ul>
+    <ul class="footer-menu">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Контакты</a></li>
