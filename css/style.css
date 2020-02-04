@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-Light'),
+  url('../fonts/Gilroy-Light.woff2') format('woff2'),
+  url('../fonts/Gilroy-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy-ExtraBold'),
+  url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+  url('../fonts/OpenSans-Light.woff2') format('woff2'),
+  url('../fonts/OpenSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans'),
+  url('../fonts/OpenSans.woff2') format('woff2'),
+  url('../fonts/OpenSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #f7e296;
+  background-image: url("../img/yellow-font.jpg");
+}
+
+.section-title {
+  font-size: 47px;
+  line-height: 48px;
+  font-family: Gilroy, Arial, sans-serif;
+  font-weight: 800;
+  color: #000000;
+}
+
+.selfie-title {
+  line-height: 56px;
+}
+
+.header-navigation,
+.header-menu {
+  list-style: none;
+}
+
+.header-menu {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header-navigation a,
+.header-menu a {
+  color: #000000;
+}
+
+.catalog-hidden {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  color: #000000;
+  list-style: none;
+  text-transform: none;
+}
+
+.header-navigation a:hover,
+.header-menu a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-navigation a:active,
+.header-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.about-us-list {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #000000;
+  list-style: circle;
+}
+
+.about-us,
+.write-us {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 3.6px;
+  background-color: #f0c52e;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.footer-link {
+  color: #ffffff;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.footer-menu {
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.footer-menu a:hover,
+.footer-nav a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-menu a:active,
+.footer-nav a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+

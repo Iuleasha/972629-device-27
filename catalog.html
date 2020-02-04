@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/main-page.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-  <div class="header-navigation">
+<header class="main-header">
+  <div>
     <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
-    <ul>
+    <ul class="header-navigation">
       <li>
         <a href="#"><img src="img/user.svg" width="13" height="12" alt="Вход"> Валентин Петухов</a>
         <a href="#">Выйти</a>
@@ -24,7 +24,7 @@
     </ul>
   </div>
   <nav>
-    <ul class="header-catalog">
+    <ul class="header-menu">
       <li>
         <a href="catalog.html">Каталог товаров<img src="img/plus.png" width="16" height="16" alt="Каталог"></a>
         <ul class="catalog-hidden">
@@ -104,7 +104,7 @@
   </section>
   <section>
     <div>
-      <h2>Сортировка:</h2>
+      <h2 class="section-title">Сортировка:</h2>
       <ul>
         <li>По цене</li>
         <li><a href="#">По типу</a></li>
@@ -167,33 +167,33 @@
     </div>
   </section>
 </main>
-<footer>
+<footer class="footer">
   <div class="footer-nav">
     <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
-    <ul>
+    <ul class="footer-list">
       <li>
         <p><img src="img/user.svg" width="13" height="12" alt="Вход"> Валентин Петухов</p>
-        <a href="#">Выйти</a>
+        <a class="footer-link" href="#">Выйти</a>
       </li>
       <li>
-        <a href="#"><img src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
+        <a class="footer-link" href="#"><img src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
       </li>
       <li>
-        <a href="#"><img src="img/cart.svg" width="12" height="12" alt="Корзина">Корзина</a>
+        <a class="footer-link" href="#"><img src="img/cart.svg" width="12" height="12" alt="Корзина">Корзина</a>
       </li>
     </ul>
   </div>
   <div>
     <p>г. Москва, ул. Строителей, 15</p>
-    <ul class="footer-menu">
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Гарантия</a></li>
-      <li><a href="#">Контакты</a></li>
+    <ul class="footer-list footer-menu">
+      <li><a class="footer-link" href="#">Доставка</a></li>
+      <li><a class="footer-link" href="#">Гарантия</a></li>
+      <li><a class="footer-link" href="#">Контакты</a></li>
     </ul>
-    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+    <a class="footer-link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
   </div>
   <div>
-    <ul>
+    <ul class="footer-list">
       <li><a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Facebook">Facebook</a>
       </li>
       <li><a href="#"><img src="img/insta.svg" width="32" height="32" alt="Instagram">Instagram</a></li>
