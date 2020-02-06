@@ -44,14 +44,13 @@
 </header>
 <main>
   <h1>Моноподы для селфи</h1>
-  <ul>
-    <li><a href="index.html">Главная</a></li>
+  <ul class="breadcrumbs">
+    <li><a class="main-page" href="index.html">Главная</a></li>
     <li>Каталог товаров</li>
     <li>Моноподы для селфи</li>
   </ul>
   <section>
-    <h2 class="visually-hidden">Фильтр товаров</h2>
-    <!-- Здесь будет форма -->
+    <h3 class="filter-item">Фильтр:</h3>
     <form class="filter" method="get" action="#">
       <!--<fieldset>
         <legend>Стоимость</legend>
@@ -62,8 +61,8 @@
           </label>
       </fieldset> -->
       <fieldset>
-        <legend>Цвет</legend>
-        <ul>
+        <legend class="filter-color">Цвет</legend>
+        <ul class="filter-point">
           <li>
             <input type="checkbox" name="black" id="filter-black" checked>
             <label for="filter-black">Черный</label>
@@ -87,8 +86,8 @@
         </ul>
       </fieldset>
       <fieldset>
-        <legend>Bluetooth</legend>
-        <ul>
+        <legend class="filter-color">Bluetooth</legend>
+        <ul class="filter-point">
           <li>
             <input type="radio" name="bluetooth" value="on" id="filter-on" checked>
             <label for="filter-on">Есть</label>
@@ -99,14 +98,14 @@
           </li>
         </ul>
       </fieldset>
-      <button type="submit">Показать</button>
+      <button type="submit" class="btn">Показать</button>
     </form>
   </section>
   <section>
-    <div>
-      <h2 class="section-title">Сортировка:</h2>
-      <ul>
-        <li>По цене</li>
+    <div class="filter-sorting">
+      <h3 class="filter-item">Сортировка</h3>
+      <ul class="filter-point">
+        <li><a class="active">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По популярности</a></li>
       </ul>
@@ -118,7 +117,7 @@
   </section>
   <section>
     <h2 class="visually-hidden">Список моноподов</h2>
-    <ul>
+    <ul class="catalog-items">
       <li>
         <div>
           <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -126,7 +125,7 @@
         <h3>
           <a href="#">Любительская селфи-палка</a>
         </h3>
-        <span>500 pуб.</span>
+        <span class="price">500 pуб.</span>
       </li>
       <li>
         <div>
@@ -135,7 +134,7 @@
         <h3>
           <a href="#">Профессиональная селфи-палка</a>
         </h3>
-        <span>1 500 pуб.</span>
+        <span class="price">1 500 pуб.</span>
       </li>
       <li>
         <div>
@@ -144,7 +143,7 @@
         <h3>
           <a href="#">Непотопляемая селфи-палка</a>
         </h3>
-        <span>2 500 pуб.</span>
+        <span class="price">2 500 pуб.</span>
       </li>
       <li>
         <div>
@@ -153,16 +152,16 @@
         <h3>
           <a href="#">Селфи-палка «Следуй за мной»</a>
         </h3>
-        <span>4 900 pуб.</span>
+        <span class="price">4 900 pуб.</span>
       </li>
     </ul>
-    <div>
-      <ul>
-        <li><a href="#">Назад</a></li>
-        <li>1</li>
+    <div class="pagination-figuration">
+      <ul class="pagination">
+        <li><a class="direction" href="#">Назад</a></li>
+        <li><a class="active">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
-        <li><a href="#">Вперед</a></li>
+        <li><a class="direction" href="#">Вперед</a></li>
       </ul>
     </div>
   </section>
