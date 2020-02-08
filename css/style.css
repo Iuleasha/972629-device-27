@@ -245,7 +245,7 @@ a {
   color: #000000;
 }
 
-.catalog-items a {
+.catalog-items li {
   list-style: none;
   color: #000000;
 }
