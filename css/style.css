@@ -88,7 +88,7 @@ a {
 }
 
 .catalog-hidden {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif; /*Здесь оставила, потому что без указания шрифта, он наследует свойство от header-menu шрифт  Gilroy, Arial, sans-serif;*/
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
@@ -160,16 +160,12 @@ a {
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.36px;
-  font-weight: 300;
   color: #000000;
 }
 
 .selfie-feature {
-  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
-  font-weight: 300;
-  color: #464646;
 }
 
 .catalog-section {
@@ -192,10 +188,8 @@ a {
 }
 
 .breadcrumbs {
-  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 300;
   list-style: none;
   color: rgba(0, 0, 0, 0.3);
 }
@@ -231,15 +225,13 @@ a {
 }
 
 .filter-point a {
-  font-family: OpenSans, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
-  font-weight: 300;
 }
 
-.filter-point a.active,
-.pagination a.active {
+.filter-point .active,
+.pagination .active {
   color: #000000;
 }
 
@@ -262,8 +254,6 @@ a {
   font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 300;
-  color: #464646;
 }
 
 .pagination-figuration {
@@ -274,7 +264,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination a.direction {
+.pagination .direction {
   color: #000000;
 }
 
