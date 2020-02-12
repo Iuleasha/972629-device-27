@@ -8,49 +8,66 @@
 </head>
 <body>
 <header class="main-header">
-  <div>
-    <a class="logo" href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
-    <ul class="header-navigation">
-      <li>
-        <a href="#"><img src="img/user.svg" width="13" height="12" alt="Вход"> Валентин Петухов</a>
-        <a href="#">Выйти</a>
-      </li>
-      <li>
-        <a href="#"><img src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
-      </li>
-      <li>
-        <a href="#"><img src="img/cart.svg" width="12" height="12" alt="Корзина">Корзина</a>
-      </li>
-    </ul>
-  </div>
   <nav>
-    <ul class="header-menu">
-      <li>
-        <a href="catalog.html">Каталог товаров<img src="img/plus.png" width="16" height="16" alt="Каталог"></a>
-        <ul class="catalog-hidden">
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнес-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
+    <a class="logo"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
+    <div class="container">
+      <div class="search">
+        <img class="icon" src="img/search.svg" width="16" height="16" alt="Search icon">
+        <input class="search-line" type="search" id="search" name="search" placeholder="Поиск по сайту">
+        <button class="search-btn">Найти</button>
+      </div>
+      <div class="user-container">
+        <ul class="header-list header-navigation">
+          <li>
+            <a href="#"><img class="icon" src="img/user.svg" width="13" height="12" alt="Вход">Войти</a>
+          </li>
         </ul>
-      </li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Гарантия</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
+        <ul class="header-list header-navigation divide">
+          <li>
+            <a href="#"><img class="icon" src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
+          </li>
+          <li>
+            <a href="#"><img class="icon" src="img/cart.svg" width="12" height="12" alt="Корзина">Корзина</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="header-list header-menu">
+        <li>
+          <a href="catalog.html">Каталог товаров<img class="icon" src="img/plus.png" width="16" height="16" alt="Каталог"></a>
+          <ul class="catalog-hidden">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="catalog-container">
+        <ul class="header-list header-menu services">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+        </ul>
+        <ul class="header-list header-menu">
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
-<main>
-  <h1>Моноподы для селфи</h1>
+<main class="main-wrapper">
+  <h1 class="page-title">Моноподы для селфи</h1>
   <ul class="breadcrumbs">
     <li><a class="main-page" href="index.html">Главная</a></li>
-    <li>Каталог товаров</li>
-    <li>Моноподы для селфи</li>
+    <li><a href="catalog.html">Каталог товаров</a></li>
+    <li><a href="#">Моноподы для селфи</a></li>
   </ul>
-  <section>
-    <h3 class="filter-item">Фильтр:</h3>
+  <div class="catalog-colums">
+  <section class="filter-wrapper">
+    <h3 class="filter-item filter-font">Фильтр:</h3>
     <form class="filter" method="get" action="#">
       <!--<fieldset>
         <legend>Стоимость</legend>
@@ -60,7 +77,7 @@
           <span>до 5000</span>
           </label>
       </fieldset> -->
-      <fieldset>
+      <fieldset class="fieldset">
         <legend class="filter-color">Цвет</legend>
         <ul class="filter-point">
           <li>
@@ -85,7 +102,7 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend class="filter-color">Bluetooth</legend>
         <ul class="filter-point">
           <li>
@@ -98,24 +115,23 @@
           </li>
         </ul>
       </fieldset>
-      <button type="submit" class="btn">Показать</button>
+      <button type="submit" class="btn filter-btn">Показать</button>
     </form>
   </section>
-  <section>
-    <div class="filter-sorting">
-      <h3 class="filter-item">Сортировка</h3>
-      <ul class="filter-point">
-        <li><a class="active">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По популярности</a></li>
-      </ul>
-      <div>
-        <button type="button">Стрелочка вверх</button>
-        <button type="button">Стрелочка вниз</button>
-      </div>
-    </div>
-  </section>
-  <section>
+
+  <section class="catalog">
+      <!--<div class="filter-sorting">
+        <h3 class="filter-item">Сортировка</h3>
+        <ul class="filter-point">
+          <li><a class="active">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+        <div>
+          <button type="button">Стрелочка вверх</button>
+          <button type="button">Стрелочка вниз</button>
+        </div>
+      </div>-->
     <h2 class="visually-hidden">Список моноподов</h2>
     <ul class="catalog-items">
       <li>
@@ -155,6 +171,7 @@
         <span class="price">4 900 pуб.</span>
       </li>
     </ul>
+
     <div class="pagination-figuration">
       <ul class="pagination">
         <li><a class="direction" href="#">Назад</a></li>
@@ -165,24 +182,24 @@
       </ul>
     </div>
   </section>
+  </div>
 </main>
 <footer class="footer">
-  <div class="footer-nav">
-    <a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
-    <ul class="footer-list">
+  <div class="footer-row">
+    <a href="index.html" class="footer-logo"><img  src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
+    <ul class="footer-list part">
       <li>
-        <p><img src="img/user.svg" width="13" height="12" alt="Вход"> Валентин Петухов</p>
-        <a class="footer-link" href="#">Выйти</a>
+        <a class="footer-link" href="#"><img class="icon" src="img/user.svg" width="13" height="12" alt="Вход">Войти</a>
       </li>
       <li>
-        <a class="footer-link" href="#"><img src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
+        <a class="footer-link" href="#"><img class="icon" src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
       </li>
       <li>
-        <a class="footer-link" href="#"><img src="img/cart.svg" width="12" height="12" alt="Корзина">Корзина</a>
+        <a class="footer-link" href="#"><img class="icon" src="img/cart.svg" width="12" height="12" alt="Корзина">Корзина</a>
       </li>
     </ul>
   </div>
-  <div>
+  <div class="footer-row">
     <p>г. Москва, ул. Строителей, 15</p>
     <ul class="footer-list footer-menu">
       <li><a class="footer-link" href="#">Доставка</a></li>
@@ -191,15 +208,15 @@
     </ul>
     <a class="footer-link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
   </div>
-  <div>
-    <ul class="footer-list">
-      <li><a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Facebook">Facebook</a>
+  <div class="footer-row">
+    <ul class="footer-list social">
+      <li><a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Facebook"></a>
       </li>
-      <li><a href="#"><img src="img/insta.svg" width="32" height="32" alt="Instagram">Instagram</a></li>
-      <li><a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter">Twitter</a>
+      <li><a href="#"><img src="img/insta.svg" width="32" height="32" alt="Instagram"></a></li>
+      <li><a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a>
       </li>
     </ul>
-    <a href="#"><img src="img/logo-html.svg" width="27" height="35" alt="logo-htmlacademy"></a>
+    <a href="#"><img src="img/logo-html.svg" width="27px" height="35px" alt="logo-htmlacademy"></a>
   </div>
 </footer>
 </body>
