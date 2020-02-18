@@ -49,13 +49,14 @@ body {
   background-color: #ffffff;
 }
 
-.wrapper {
-  width: 1160px;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -114,12 +115,6 @@ input[type="radio"].visually-hidden {
   font-family: Gilroy, Arial, sans-serif;
   font-weight: 800;
   color: #000000;
-}
-
-.main-header ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .header-list {
@@ -213,6 +208,10 @@ input[type="radio"].visually-hidden {
 .header-menu a {
   color: #000000;
 }
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .catalog-hidden {
   position: absolute;
@@ -224,6 +223,31 @@ input[type="radio"].visually-hidden {
   color: #000000;
   list-style: none;
   text-transform: none;
+
+  /* !!!!!!  */
+  background: #f7e296;
+  width: 100%;
+  left: 0;
+  padding: 40px 60px 42px;
+  z-index: 3;
+  flex-direction: column;
+  height: 192px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  letter-spacing: 0.15px;
+  /* !!!!!!  */
+}
+
+.catalog-hidden li {
+  margin-right: 58px;
+}
+
+.catalog-hidden li:last-of-type {
+  margin-bottom: 4px;
+}
+
+.header-list li:first-of-type:hover > .catalog-hidden {
+  display: flex;
 }
 
 .header-navigation a:hover,
@@ -538,9 +562,11 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
+
 .pagination li:not(:last-of-type) {
   margin-right: 30px;
 }
+
 .pagination a {
   color: rgba(0, 0, 0, 0.3);
 }

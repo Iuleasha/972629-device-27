@@ -13,6 +13,7 @@
     <div class="container">
       <div class="search">
         <img class="icon" src="img/search.svg" width="16" height="16" alt="Search icon">
+        <label class="visually-hidden" for="search">Поиск по сайту</label>
         <input class="search-line" type="search" id="search" name="search" placeholder="Поиск по сайту">
         <button class="search-btn">Найти</button>
       </div>
@@ -35,8 +36,9 @@
     <div class="container">
       <ul class="header-list header-menu">
         <li>
-          <a href="catalog.html">Каталог товаров<img class="icon" src="img/plus.png" width="16" height="16" alt="Каталог"></a>
-          <ul class="catalog-hidden">
+          <a href="catalog.html">Каталог товаров<img class="icon" src="img/plus.png" width="16" height="16"
+                                                     alt="Каталог"></a>
+          <ul class="catalog-hidden visually-hidden">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
@@ -59,29 +61,32 @@
   </nav>
 </header>
 <main>
-  <section>
+  <section class="wrapper">
     <h2 class="visually-hidden">Описание палки для сэлфи</h2>
-    <div>
-      <div>
-        <img src="img/selfie-stick.img.jpg" width="384" height="486" alt="Самая длинная палка для селфи ">
-      </div>
-      <div>
-        <h2 class="selfie-title">Делай селфи,<br> как Бен Стиллер!</h2>
-        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-        <a class="btn" href="#">Подробнее</a>
+    <div class="slider-wrapper">
+      <div class="slide">
+        <div class="slide-number">01</div>
         <div>
-          <table>
-            <tr class="selfie-description">
-              <td>8,5 м</td>
-              <td>5 кг</td>
-              <td>Карбон</td>
-            </tr>
-            <tr class="selfie-feature">
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
-            </tr>
-          </table>
+          <img src="img/slider-1-png.png" width="384" height="486" alt="Самая длинная палка для селфи ">
+        </div>
+        <div>
+          <h2 class="selfie-title">Делай селфи,<br> как Бен Стиллер!</h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a class="btn" href="#">Подробнее</a>
+          <div>
+            <table>
+              <tr class="selfie-description">
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr class="selfie-feature">
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -149,7 +154,8 @@
     </div>
     <div>
       <h2 class="section-title">Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+        поднимая его на ваш этаж.</p>
       <div>
         <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
       </div>
@@ -173,24 +179,26 @@
   <section class="wrapper information">
     <div class="information-item">
       <div class="line-block">
-      <h2 class="section-title position">О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="about-us-list">
-        <li>Деловые Линии</li>
-        <li>Автотрейдин</li>
-        <li>ЖелДорЭкспедиция</li>
-      </ul>
+        <h2 class="section-title position">О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
+          компаниями:</p>
+        <ul class="about-us-list">
+          <li>Деловые Линии</li>
+          <li>Автотрейдин</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
       </div>
       <a class="btn about-us" href=""><span>Подробнее о нас</span></a>
     </div>
     <div class="information-item">
       <div class="line-block">
-      <h2 class="section-title position">Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <div>
-        <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, строение 15, город Москва">
-      </div>
+        <h2 class="section-title position">Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+          Всякое бывает.</p>
+        <div>
+          <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, строение 15, город Москва">
+        </div>
       </div>
       <a class="btn write-us" href="#">Напишите нам</a>
       <section class="hidden">
@@ -221,39 +229,40 @@
 </main>
 <footer class="footer">
   <div class="wrapper">
-  <div class="footer-row">
-    <a href="index.html" class="footer-logo"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
-    <ul class="footer-list part">
-      <li>
-        <a class="footer-link" href="#"><img class="icon" src="img/user.svg" width="13" height="12" alt="Вход">Войти</a>
-      </li>
-      <li>
-        <a class="footer-link" href="#"><img class="icon" src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
-      </li>
-      <li>
-        <a class="footer-link" href="#"><img class="icon" src="img/cart.svg" width="12" height="12" alt="Корзина">Корзина</a>
-      </li>
-    </ul>
-  </div>
-  <div class="footer-row">
-    <p>г. Москва, ул. Строителей, 15</p>
-    <ul class="footer-list footer-menu">
-      <li><a class="footer-link" href="#">Доставка</a></li>
-      <li><a class="footer-link" href="#">Гарантия</a></li>
-      <li><a class="footer-link" href="#">Контакты</a></li>
-    </ul>
-    <a class="footer-link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-  </div>
-  <div class="footer-row">
-    <ul class="footer-list social">
-      <li><a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Facebook"></a>
-      </li>
-      <li><a href="#"><img src="img/insta.svg" width="32" height="32" alt="Instagram"></a></li>
-      <li><a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a>
-      </li>
-    </ul>
-    <a href="#"><img src="img/logo-html.svg" width="27px" height="35px" alt="logo-htmlacademy"></a>
-  </div>
+    <div class="footer-row">
+      <a href="index.html" class="footer-logo"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
+      <ul class="footer-list part">
+        <li>
+          <a class="footer-link" href="#"><img class="icon" src="img/user.svg" width="13" height="12"
+                                               alt="Вход">Войти</a>
+        </li>
+        <li>
+          <a class="footer-link" href="#"><img class="icon" src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
+        </li>
+        <li>
+          <a class="footer-link" href="#"><img class="icon" src="img/cart.svg" width="12" height="12" alt="Корзина">Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-row">
+      <p>г. Москва, ул. Строителей, 15</p>
+      <ul class="footer-list footer-menu">
+        <li><a class="footer-link" href="#">Доставка</a></li>
+        <li><a class="footer-link" href="#">Гарантия</a></li>
+        <li><a class="footer-link" href="#">Контакты</a></li>
+      </ul>
+      <a class="footer-link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+    </div>
+    <div class="footer-row">
+      <ul class="footer-list social">
+        <li><a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Facebook"></a>
+        </li>
+        <li><a href="#"><img src="img/insta.svg" width="32" height="32" alt="Instagram"></a></li>
+        <li><a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a>
+        </li>
+      </ul>
+      <a href="#"><img src="img/logo-html.svg" width="27px" height="35px" alt="logo-htmlacademy"></a>
+    </div>
   </div>
 </footer>
 <section>
