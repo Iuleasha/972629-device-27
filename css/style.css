@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy-Light"), url("../fonts/Gilroy-Light.woff2") format("woff2"),
-  url("../fonts/Gilroy-Light.woff") format("woff");
+    url("../fonts/Gilroy-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -9,8 +9,8 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy-ExtraBold"),
-  url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"),
-  url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+    url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Gilroy-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
@@ -18,8 +18,8 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans Light"), local("OpenSans-Light"),
-  url("../fonts/OpenSans-Light.woff2") format("woff2"),
-  url("../fonts/OpenSans-Light.woff") format("woff");
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -27,8 +27,8 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"), local("OpenSans"),
-  url("../fonts/OpenSans.woff2") format("woff2"),
-  url("../fonts/OpenSans.woff") format("woff");
+    url("../fonts/OpenSans.woff2") format("woff2"),
+    url("../fonts/OpenSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -150,9 +150,11 @@ input[type="radio"].visually-hidden {
 .icon {
   margin-right: 10px;
 }
-.plus{
+
+.plus {
   margin-left: 16px;
 }
+
 .search-line {
   color: #000000;
   opacity: 0.3;
@@ -211,9 +213,11 @@ input[type="radio"].visually-hidden {
 .header-menu a {
   color: #000000;
 }
-.header-navigation li:first-child{
+
+.header-navigation li:first-child {
   margin-left: 16px;
 }
+
 .wrapper {
   width: 1160px;
   margin: 0 auto;
@@ -697,8 +701,63 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.range-filter {
+  width: 196px;
+}
+
+.range-controls {
+  position: relative;
+  height: 23px;
+  padding-top: 13px;
+  padding-bottom: 16px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 49%;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .color input[type="checkbox"],
-.bluetooth input[type="radio"] {
+.bluetooth input[type="radio"],
+.price-controls input[type="number"] {
   display: none;
 }
 
@@ -962,7 +1021,6 @@ input[type="radio"].visually-hidden {
 .direction:focus {
   background-color: #d9d9d9;
 }
-
 
 .footer,
 .footer-link,

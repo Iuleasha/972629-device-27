@@ -73,14 +73,22 @@
       <section class="filter-wrapper">
         <h3 class="filter-item filter-font">Фильтр:</h3>
         <form class="filter" method="get" action="#">
-          <!--<fieldset>
-            <legend>Стоимость</legend>
-            <label>
-              <span>от 0</span>
-              <input type="range" min="0" max="5000">
-              <span>до 5000</span>
-              </label>
-          </fieldset> -->
+          <fieldset class="fieldset">
+            <legend class="filter-color">Стоимость</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от 0<input name="min-price" type="number" value="0"></label>
+                <label class="max-price">до 5000<input name="max-price" type="number" value="5000"></label>
+              </div>
+            </div>
+          </fieldset>
           <fieldset class="fieldset">
             <legend class="filter-color">Цвет</legend>
             <ul class="filter-point color">
