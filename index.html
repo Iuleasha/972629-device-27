@@ -36,9 +36,8 @@
     <div class="container">
       <ul class="header-list header-menu">
         <li>
-          <a href="catalog.html">Каталог товаров<img class="icon" src="img/plus.png" width="16" height="16"
-                                                     alt="Каталог"></a>
-          <ul class="catalog-hidden visually-hidden">
+          <a href="catalog.html">Каталог товаров<img class="icon plus" src="img/plus.png" width="16" height="16" alt="Каталог"></a>
+          <ul class="catalog-hidden">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
@@ -64,16 +63,26 @@
   <section class="wrapper">
     <h2 class="visually-hidden">Описание палки для сэлфи</h2>
     <div class="slider-wrapper">
+      <input type="radio" name="slide" value="1" id="slide-1" checked>
+      <input type="radio" name="slide" value="2" id="slide-2">
+      <input type="radio" name="slide" value="3" id="slide-3">
+
+      <div class="slide-btn">
+        <h2 class="visually-hidden">Переключатель слайдов</h2>
+        <label for="slide-1"></label>
+        <label for="slide-2"></label>
+        <label for="slide-3"></label>
+      </div>
       <div class="slide">
         <div class="slide-number">01</div>
-        <div>
+        <div class="selfie-img">
           <img src="img/slider-1-png.png" width="384" height="486" alt="Самая длинная палка для селфи ">
         </div>
-        <div>
-          <h2 class="selfie-title">Делай селфи,<br> как Бен Стиллер!</h2>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a class="btn" href="#">Подробнее</a>
-          <div>
+        <div class="slide-description">
+          <h2 class="slide-title">Делай селфи,<br> как Бен Стиллер!</h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a class="btn details" href="#"><span>Подробнее</span></a>
+          <div  class="table">
             <table>
               <tr class="selfie-description">
                 <td>8,5 м</td>
@@ -89,91 +98,89 @@
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <h2 class="visually-hidden">Переключатель слайдов</h2>
-      <label for="slide-1">
-        <input type="radio" name="slide" value="1" id="slide-1" checked>
-      </label>
-      <label for="slide-2">
-        <input type="radio" name="slide" value="2" id="slide-2">
-      </label>
-      <label for="slide-3">
-        <input type="radio" name="slide" value="3" id="slide-3">
-      </label>
+
       <!-- Здесь будут карточки товаров для слайдов -->
+
     </div>
   </section>
-  <section>
+  <section class="wrapper">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <ul class="catalog-section">
       <li>
         <a href="#">
-          <div class="menu-font-1"><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+          <div class="menu-font"><img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
           </div>
           <h3>Виртуальная реальность</h3>
         </a>
       </li>
       <li>
         <a href="#">
-          <div class="menu-font-2"><img src="img/tel-holder.svg" width="86" height="117" alt="Моноподы для селфи"></div>
-          <h3>Моноподы для селфи</h3>
+          <div class="menu-font stick"><img src="img/tel-holder.svg" width="86" height="117" alt="Моноподы для селфи"></div>
+          <h3>Моноподы<br> для селфи</h3>
         </a>
       </li>
       <li>
         <a href="#">
-          <div class="menu-font-3"><img src="img/camera.svg" width="71" height="87" alt="Экшн-камеры"></div>
+          <div class="menu-font"><img src="img/camera.svg" width="71" height="87" alt="Экшн-камеры"></div>
           <h3>Экшн-камеры</h3>
         </a>
       </li>
       <li>
         <a href="#">
-          <div class="menu-font-4"><img src="img/cardio-watch.svg" width="107" height="65" alt="Фитнес-браслеты"></div>
+          <div class="menu-font"><img src="img/cardio-watch.svg" width="107" height="65" alt="Фитнес-браслеты"></div>
           <h3>Фитнес-браслеты</h3>
         </a>
       </li>
       <li>
         <a href="#">
-          <div class="menu-font-5"><img src="img/watch.svg" width="56" height="98" alt="Умные часы"></div>
+          <div class="menu-font"><img src="img/watch.svg" width="56" height="98" alt="Умные часы"></div>
           <h3>Умные часы</h3>
         </a>
       </li>
       <li>
         <a href="#">
-          <div class="menu-font-6"><img src="img/quadcopter.svg" width="132" height="69" alt="Квадрокоптеры"></div>
+          <div class="menu-font"><img src="img/quadcopter.svg" width="132" height="69" alt="Квадрокоптеры"></div>
           <h3>Квадрокоптеры</h3>
         </a>
       </li>
     </ul>
   </section>
-  <section class="delivery">
-    <div>
-      <button class="btn offer" type="button">Доставка</button>
-      <button class="btn offer" type="button">Гарантия</button>
-      <button class="btn offer" type="button">Кредит</button>
+  <div class="wallpaper">
+    <section class="wrapper">
+
+    <div class="delivery-wrapper">
+
+    <div class="delivery-btn">
+      <button class="btn offer" type="button"><span>Доставка</span></button>
+      <button class="btn offer" type="button"><span>Гарантия</span></button>
+      <button class="btn offer" type="button"><span>Кредит</span></button>
     </div>
-    <div>
+    <div class="delivery-info">
       <h2 class="section-title">Доставка</h2>
-      <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-        поднимая его на ваш этаж.</p>
-      <div>
+      <p>Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.</p>
+    </div>
+      <div class="delivery-img">
         <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
       </div>
     </div>
+
   </section>
-  <section>
+  </div>
+  <section class="wrapper">
     <h2 class="visually-hidden">Партнеры</h2>
+    <div class="partners-holder">
     <div>
-      <a class="partner" href="#"><img src="img/logo-1.png" width="260" height="100" alt="Логотип партнера"></a>
+      <a class="partner" href="#"><img src="img/logo-1-jpg.png" width="260" height="100" alt="Логотип партнера"></a>
     </div>
     <div>
-      <a class="partner" href="#"><img src="img/logo-2.png" width="260" height="100" alt="Логотип партнера"></a>
+      <a class="partner" href="#"><img src="img/logo-2-jpg.png" width="260" height="100" alt="Логотип партнера"></a>
     </div>
     <div>
-      <a class="partner" href="#"><img src="img/logo-3.png" width="260" height="100" alt="Логотип партнера"></a>
+      <a class="partner" href="#"><img src="img/logo-3-jpg.png" width="260" height="100" alt="Логотип партнера"></a>
     </div>
     <div>
-      <a class="partner" href="#"><img src="img/logo-4.png" width="260" height="100" alt="Логотип партнера"></a>
+      <a class="partner" href="#"><img src="img/logo-4-jpg.png" width="260" height="100" alt="Логотип партнера"></a>
+    </div>
     </div>
   </section>
   <section class="wrapper information">
@@ -181,8 +188,7 @@
       <div class="line-block">
         <h2 class="section-title position">О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
-          компаниями:</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="about-us-list">
           <li>Деловые Линии</li>
           <li>Автотрейдин</li>
@@ -194,13 +200,12 @@
     <div class="information-item">
       <div class="line-block">
         <h2 class="section-title position">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
-          Всякое бывает.</p>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div>
           <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, строение 15, город Москва">
         </div>
       </div>
-      <a class="btn write-us" href="#">Напишите нам</a>
+      <a class="btn write-us" href="#"><span>Напишите нам</span></a>
       <section class="hidden">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <button type="button">Закрыть</button>
@@ -233,8 +238,7 @@
       <a href="index.html" class="footer-logo"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
       <ul class="footer-list part">
         <li>
-          <a class="footer-link" href="#"><img class="icon" src="img/user.svg" width="13" height="12"
-                                               alt="Вход">Войти</a>
+          <a class="footer-link" href="#"><img class="icon" src="img/user.svg" width="13" height="12" alt="Вход">Войти</a>
         </li>
         <li>
           <a class="footer-link" href="#"><img class="icon" src="img/compare.svg" width="10" height="10" alt="График">Сравнить</a>
