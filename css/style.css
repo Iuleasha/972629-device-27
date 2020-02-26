@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy-Light"), url("../fonts/Gilroy-Light.woff2") format("woff2"),
-    url("../fonts/Gilroy-Light.woff") format("woff");
+  url("../fonts/Gilroy-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -9,8 +9,8 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy-ExtraBold"),
-    url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"),
-    url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+  url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"),
+  url("../fonts/Gilroy-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
@@ -18,8 +18,8 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans Light"), local("OpenSans-Light"),
-    url("../fonts/OpenSans-Light.woff2") format("woff2"),
-    url("../fonts/OpenSans-Light.woff") format("woff");
+  url("../fonts/OpenSans-Light.woff2") format("woff2"),
+  url("../fonts/OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -27,8 +27,8 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"), local("OpenSans"),
-    url("../fonts/OpenSans.woff2") format("woff2"),
-    url("../fonts/OpenSans.woff") format("woff");
+  url("../fonts/OpenSans.woff2") format("woff2"),
+  url("../fonts/OpenSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -226,26 +226,22 @@ input[type="radio"].visually-hidden {
 .catalog-hidden {
   position: absolute;
   display: none;
-  font-family: "Open Sans", Arial, sans-serif; /*Здесь оставила, потому что без указания шрифта, он наследует свойство от header-menu шрифт  Gilroy, Arial, sans-serif;*/
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
   color: #000000;
-  list-style: none;
   text-transform: none;
-
-  /* !!!!!!  */
   background: #f7e296;
   width: 100%;
   left: 0;
-  padding: 40px 60px 42px;
+  padding: 40px 60px 28px;
   z-index: 3;
   flex-direction: column;
-  height: 192px;
+  height: 176px;
   flex-wrap: wrap;
   align-content: flex-start;
   letter-spacing: 0.15px;
-  /* !!!!!!  */
 }
 
 .catalog-hidden li {
@@ -262,12 +258,12 @@ input[type="radio"].visually-hidden {
 
 .header-navigation a:hover,
 .header-menu a:hover {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .header-navigation a:active,
 .header-menu a:active {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 .btn {
@@ -275,7 +271,7 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   outline: none;
   position: relative;
-  height: 40px;
+  padding: 8px 0;
   border: none;
 }
 
@@ -479,11 +475,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   position: relative;
   z-index: 2;
-  padding: 0 60px;
+  padding: 0 80px 0 88px;
 }
 
 .selfie-img {
-  margin-right: 130px;
+  margin-right: 125px;
   width: 384px;
   height: 486px;
 }
@@ -785,6 +781,19 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.color label:hover,
+.color label:focus,
+.bluetooth label:hover,
+.bluetooth label:focus {
+  opacity: 0.6;
+}
+
+.color label:active,
+.bluetooth label:active {
+  color: #000000;
+  opacity: 1;
+}
+
 .bluetooth label::before {
   display: inline-block;
   content: "";
@@ -970,6 +979,7 @@ input[type="radio"].visually-hidden {
   width: 360px;
   margin-right: 40px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .name-items {
@@ -1050,15 +1060,16 @@ input[type="radio"].visually-hidden {
 }
 
 .part a {
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  opacity: 0.7;
 }
 
 .part a:hover {
-  color: #ffffff;
+  opacity: 1;
 }
 
 .part a:active {
-  color: rgba(255, 255, 255, 0.3);
+  opacity: 0.3;
 }
 
 .footer-row {
@@ -1096,6 +1107,28 @@ input[type="radio"].visually-hidden {
 
 .footer-menu li:last-child {
   margin-right: 0;
+}
+
+.logo-fill,
+.html-fill {
+  fill: #ffc600;
+}
+
+.user-fill,
+.compare-fill,
+.cart-fill {
+  fill: #ffc600;
+  margin-right: 10px;
+}
+
+.footer-logo:hover,
+.html-fill:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:active,
+.html-fill:active {
+  opacity: 0.3;
 }
 
 .footer-list,
@@ -1139,4 +1172,117 @@ input[type="radio"].visually-hidden {
 .footer-menu a:active,
 .footer-nav a:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
+
+  color: #000000;
+}
+
+.modal-login {
+  display: none;
+  width: 960px;
+  height: 553px;
+  padding: 98px 100px 92px 100px;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  text-align: left;
+}
+
+.modal-close {
+  width: 55px;
+  height: 55px;
+  background-color: #f0c52e;
+  opacity: 0.5;
+  border-radius: 50%;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  cursor: pointer;
+}
+
+.modal-close:before,
+.modal-close:after {
+  width: 30px;
+  height: 2px;
+  z-index: 3;
+  background-color: white;
+  content: "";
+  display: block;
+  top: 25px;
+  left: 12px;
+  position: absolute;
+}
+
+.modal-close:before {
+  transform: rotate(45deg);
+}
+
+.modal-close:after {
+  transform: rotate(-45deg);
+}
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.login-form label {
+  margin-bottom: 13px;
+  cursor: pointer;
+  margin-bottom: 39px;
+}
+
+.login-form input,
+.login-form textarea {
+  display: block;
+  margin-top: 13px;
+  padding-left: 20px;
+}
+
+.login-form textarea {
+  width: 760px;
+  height: 156px;
+  padding-top: 19px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form textarea[type="text"] {
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: left;
+  color: rgba(70, 70, 70, 0.4);
+  opacity: 0.4;
+  background-color: #e5e5e5;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"] {
+  width: 360px;
+  height: 50px;
+}
+
+.btn-form {
+  width: 200px;
+}
+
+.modal-map {
+  display: none;
+  width: 960px;
+  height: 559px;
 }
