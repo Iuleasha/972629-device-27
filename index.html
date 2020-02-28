@@ -62,18 +62,22 @@
 </header>
 <main>
   <section class="wrapper">
-    <h2 class="visually-hidden">Описание палки для сэлфи</h2>
-    <div class="slider-wrapper">
-      <input type="radio" name="slide" value="1" id="slide-1" checked>
-      <input type="radio" name="slide" value="2" id="slide-2">
-      <input type="radio" name="slide" value="3" id="slide-3">
 
-      <div class="slide-btn">
+    <input class="visually-hidden" type="radio" name="slide" value="1" id="slide-1" checked>
+    <input class="visually-hidden" type="radio" name="slide" value="2" id="slide-2">
+    <input class="visually-hidden" type="radio" name="slide" value="3" id="slide-3">
+
+
+    <div class="slider-wrapper">
+      <div class="slider-controls">
         <h2 class="visually-hidden">Переключатель слайдов</h2>
         <label for="slide-1"></label>
         <label for="slide-2"></label>
         <label for="slide-3"></label>
       </div>
+      <ul class="slider-list">
+<li class="slides" id="product-1">
+  <h2 class="visually-hidden">Описание палки для сэлфи</h2>
       <div class="slide">
         <div class="slide-number">01</div>
         <div class="selfie-img">
@@ -98,11 +102,69 @@
               </tr>
             </table>
           </div>
+
         </div>
+
       </div>
+</li>
+      <li class="slides" id="product-2">
+        <h2 class="visually-hidden">Описание фитнес-браслета</h2>
+        <div class="slide">
+          <div class="slide-number">02</div>
+          <div class="clock-img">
+            <img src="img/slider-2-png.jpg" width="345" height="485" alt="Мотивирующий фитнес-браслет">
+          </div>
+          <div class="slide-description">
+            <h2 class="slide-title">Худеем правильно!</h2>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+            <a class="btn details" href="#"><span>Подробнее</span></a>
+            <div class="table">
+              <table>
+                <tr class="selfie-description">
+                  <td>48 часов</td>
+                </tr>
+                <tr class="selfie-feature">
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </div>
 
-      <!-- Здесь будут карточки товаров для слайдов -->
+          </div>
 
+        </div>
+      </li>
+        <li class="slides" id="product-3">
+          <h2 class="visually-hidden">Описание палки для сэлфи</h2>
+          <div class="slide">
+            <div class="slide-number">01</div>
+            <div class="selfie-img">
+              <img src="img/slider-3-png.jpg" width="526" height="334" alt="Квадрокоптер">
+            </div>
+            <div class="slide-description">
+              <h2 class="slide-title">Порхает как бабочка,
+                жалит как пчела!</h2>
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="btn details" href="#"><span>Подробнее</span></a>
+              <div class="table">
+                <table>
+                  <tr class="selfie-description">
+                    <td>800 м</td>
+                    <td>50 м</td>
+                  </tr>
+                  <tr class="selfie-feature">
+                    <td>Дальность полета</td>
+                    <td>Радиус поражения</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="wrapper">

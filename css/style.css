@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy-Light"), url("../fonts/Gilroy-Light.woff2") format("woff2"),
-  url("../fonts/Gilroy-Light.woff") format("woff");
+    url("../fonts/Gilroy-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -9,8 +9,8 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy-ExtraBold"),
-  url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"),
-  url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+    url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Gilroy-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
@@ -18,8 +18,8 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans Light"), local("OpenSans-Light"),
-  url("../fonts/OpenSans-Light.woff2") format("woff2"),
-  url("../fonts/OpenSans-Light.woff") format("woff");
+    url("../fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -27,8 +27,8 @@
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"), local("OpenSans"),
-  url("../fonts/OpenSans.woff2") format("woff2"),
-  url("../fonts/OpenSans.woff") format("woff");
+    url("../fonts/OpenSans.woff2") format("woff2"),
+    url("../fonts/OpenSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -513,7 +513,7 @@ input[type="radio"].visually-hidden {
   margin: 34px 0 30px;
 }
 
-.slide-btn {
+.slider-controls {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -523,11 +523,11 @@ input[type="radio"].visually-hidden {
   z-index: 3;
 }
 
-.slider-wrapper input[type="radio"] {
+.slide-btn input[type="radio"] {
   display: none;
 }
 
-.slide-btn label {
+.slider-controls label {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,19 +538,32 @@ input[type="radio"].visually-hidden {
   width: 12px;
 }
 
-.slide-btn label:before {
+.slider-controls label:before {
   content: "";
   display: inline-block;
   background-size: contain;
   height: 6px;
   border-radius: 50%;
   width: 6px;
-}
 
-#slide-1:checked ~ .slide-btn label[for="slide-1"]:before,
-#slide-2:checked ~ .slide-btn label[for="slide-2"]:before,
-#slide-3:checked ~ .slide-btn label[for="slide-3"]:before {
+}
+.slides{
+  display: none;
+}
+.slides{
+  margin: 0;
+  padding: 0;
+}
+#slide-1:checked ~ .wrapper label[for="slide-1"]:before,
+#slide-2:checked ~ .wrapper label[for="slide-2"]:before,
+#slide-3:checked ~ .wrapper label[for="slide-3"]:before {
   border: 1px solid #000;
+  background-color: #000000;
+}
+#slide-1:checked ~.wrapper #product-1,
+#slide-2:checked ~.wrapper #product-2,
+#slide-3:checked ~.wrapper #product-3{
+  display: block;
 }
 
 .details {
@@ -731,6 +744,13 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
   top: 50%;
   transform: translateY(-50%);
+  transition: border 0.3s, width 0.3s, height 0.3s;
+}
+
+.range-controls .toggle:active {
+  border: 9px solid #ffffff;
+  width: 22px;
+  height: 22px;
 }
 
 .range-controls .toggle-min {
