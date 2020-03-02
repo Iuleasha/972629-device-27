@@ -275,7 +275,7 @@
       <div class="line-block">
         <h2 class="section-title position">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <div>
+        <div class="map-img">
           <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, строение 15, город Москва">
         </div>
       </div>
@@ -363,23 +363,27 @@
     </div>
   </div>
 </footer>
+
 <section class="modal modal-login">
-  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <button class="modal-close close-login" type="button"><span class="visually-hidden">Закрыть</span></button>
   <h2 class="section-title visually-hidden">Личный кабинет</h2>
   <form class="login-form" action="#" method="post">
     <label for="name">Ваше имя:
-      <input type="text" name="login" id="name" placeholder="Имя Фамилия"></label>
+      <input type="text" name="login" id="name" placeholder="Имя Фамилия" required></label>
     <label for="email">Ваш e-mail:
-      <input type="email" name="email" id="email" placeholder="email@example.com"></label>
+      <input type="email" name="email" id="email" placeholder="email@example.com" required></label>
     <label for="letter">Текст письма:
-      <textarea type="text" name="letter" id="letter">В свободной форме</textarea></label>
+      <textarea type="text" name="letter" id="letter" placeholder="В свободной форме"></textarea></label>
     <button class="btn btn-form" type="button"><span>Отправить</span></button>
   </form>
 </section>
+
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
-  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-  <img src="img/map-big-jpg.jpg" width="960" height="559" alt="улица Строителей, строение 15, город Москва">
+  <button class="modal-close map-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548883495!2d37.527423951680014!3d55.687030980440234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1583180569260!5m2!1sru!2sru" width="960" height="559" frameborder="0" style="border:0;" allowfullscreen="">
+  </iframe>
 </section>
+<script src="js/script.js"></script>
 </body>
 </html>
