@@ -1718,6 +1718,7 @@ input[type="radio"].visually-hidden {
   right: 22px;
   cursor: pointer;
   outline: none;
+  border: none;
 }
 
 .modal-close:before,
