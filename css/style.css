@@ -2071,3 +2071,30 @@ transform: translate(-50%, -50%);
   transform: translate(-50%, -2000px);
   }
 }
+
+
+.slider-controls-2{
+
+}
+.slider-list-2{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 284px;
+  min-width: 284px;
+  border-right: 7px solid #000000;
+  padding-top: 80px;
+  padding-bottom: 70px;
+  position: relative;
+  margin-top: -101px;
+  padding-left: 0px;
+}

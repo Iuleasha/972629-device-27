@@ -215,12 +215,23 @@
   <div class="wallpaper">
     <section class="wrapper">
       <div class="delivery-wrapper">
-        <div class="delivery-btn">
+        <input class="visually-hidden" type="radio" name="slide-item" value="1" id="slide-4" checked>
+        <input class="visually-hidden" type="radio" name="slide-item" value="2" id="slide-5">
+        <input class="visually-hidden" type="radio" name="slide-item" value="3" id="slide-6">
+          <div class="slider-controls-2">
+            <h2 class="visually-hidden">Переключатель слайдов</h2>
+            <label class="btn offer" for="slide-4" tabindex="4">Доставка</label>
+            <label class="btn offer" for="slide-5" tabindex="5">Гарантия</label>
+            <label class="btn offer" for="slide-6" tabindex="6">Кредит</label>
+          </div>
+
+        <!--<div class="delivery-btn">
           <button class="btn offer offer-active" type="button"><span>Доставка</span></button>
           <button class="btn offer" type="button"><span>Гарантия</span></button>
           <button class="btn offer" type="button"><span>Кредит</span></button>
-        </div>
-
+        </div>-->
+        <ul class="slider-list-2">
+        <li class="slides-2" id="item-1">
         <div class="delivery-content delivery-content-active">
           <div class="delivery-info">
             <h2 class="section-title">Доставка</h2>
@@ -231,7 +242,8 @@
             <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
           </div>
         </div>
-
+        </li>
+          <li class="slides-2" id="item-2">
         <div class="delivery-content">
           <div class="delivery-info">
             <h2 class="section-title">Гарантия</h2>
@@ -242,7 +254,8 @@
             <img src="img/warranty.svg" width="171" height="194" alt="Гарантия">
           </div>
         </div>
-
+          </li>
+          <li class="slides-2" id="item-3">
         <div class="delivery-content">
           <div class="delivery-info">
             <h2 class="section-title">Кредит</h2>
@@ -253,6 +266,8 @@
             <img src="img/credit.svg" width="156" height="186" alt="Кредит">
           </div>
         </div>
+          </li>
+        </ul>
       </div>
     </section>
   </div>
