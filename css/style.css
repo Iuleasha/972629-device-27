@@ -2076,5 +2076,6 @@ input[type="radio"].visually-hidden {
 
   100% {
     transform: translateY(2000px);
+    display: none;
   }
 }
