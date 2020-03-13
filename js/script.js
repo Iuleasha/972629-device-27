@@ -20,6 +20,7 @@ close.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('modal-show');
   popup.classList.remove('modal-error');
+  popup.classList.add('modal-close');
 });
 
 form.addEventListener('submit', function (evt) {
@@ -43,7 +44,7 @@ window.addEventListener('keydown', function (evt) {
 
 mapLink.addEventListener('click', function (evt) {
   evt.preventDefault();
-  mapPopup.classList.remove('modal-сдщыу');
+  mapPopup.classList.remove('modal-close');
   mapPopup.classList.add('modal-show');
 });
 
