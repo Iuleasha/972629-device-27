@@ -43,12 +43,14 @@ window.addEventListener('keydown', function (evt) {
 
 mapLink.addEventListener('click', function (evt) {
   evt.preventDefault();
+  mapPopup.classList.remove('modal-сдщыу');
   mapPopup.classList.add('modal-show');
 });
 
 mapClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove('modal-show');
+  mapPopup.classList.add('modal-close');
 });
 
 for (let i = 0; i < offerBtns.length; i++) {

@@ -7,27 +7,27 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
-  <nav>
+<header class="wrapper">
+  <nav class="main-header">
     <a class="logo"><img src="img/logo.svg" width="163" height="35" alt="Логотип"></a>
 
     <div class="container">
-      <div class="search">
+      <form class="search">
         <label class="visually-hidden" for="search">Поиск по сайту</label>
         <input class="search-line" type="search" id="search" name="search" placeholder="Поиск по сайту">
         <button class="search-btn">Найти</button>
-      </div>
+      </form>
 
       <div class="user-container">
         <ul class="header-list header-navigation">
-          <li>
+          <li class="header-list-item">
             <a class="left-icon icon-user icon-black" href="#">Войти</a>
           </li>
         </ul>
 
         <ul class="header-list header-navigation divide">
-          <li><a class="left-icon icon-compare icon-black" href="#">Сравнить</a></li>
-          <li><a class="left-icon icon-cart icon-black" href="#">Корзина</a></li>
+          <li class="header-list-item"><a class="left-icon icon-compare icon-black" href="#">Сравнить</a></li>
+          <li class="header-list-item"><a class="left-icon icon-cart icon-black" href="#">Корзина</a></li>
         </ul>
       </div>
     </div>
@@ -36,14 +36,25 @@
       <ul class="header-list header-menu">
         <li>
           <a class="right-icon icon-plus" href="catalog.html">Каталог товаров</a>
-          <ul class="catalog-hidden">
+          <div class="catalog-hidden">
+        <ul class="first">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+
+
+            <ul class="second">
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
+            </ul>
+
+            <ul class="third">
             <li><a href="#">Квадрокоптеры</a></li>
-          </ul>
+            <li><a href="#">Квадрокоптеры</a></li>
+            <li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li><li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
 
@@ -61,7 +72,7 @@
   </nav>
 </header>
 
-<main>
+<main class="main-wrapper">
   <section class="wrapper">
     <input class="visually-hidden" type="radio" name="slide" value="1" id="slide-1" checked>
     <input class="visually-hidden" type="radio" name="slide" value="2" id="slide-2">
@@ -69,9 +80,9 @@
     <div class="slider-wrapper">
       <div class="slider-controls">
         <h2 class="visually-hidden">Переключатель слайдов</h2>
-        <label for="slide-1"></label>
-        <label for="slide-2"></label>
-        <label for="slide-3"></label>
+        <label for="slide-1" tabindex="1"></label>
+        <label for="slide-2" tabindex="2"></label>
+        <label for="slide-3" tabindex="3"></label>
       </div>
 
       <ul class="slider-list">
@@ -164,56 +175,39 @@
     <h2 class="visually-hidden">Каталог товаров</h2>
     <ul class="catalog-section">
       <li>
-        <a href="#">
-          <div class="catalog-image-wrapper glasses">
-            <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
-          </div>
-
+        <a class="catalog-product" href="#">
+          <div class="catalog-image-wrapper glasses"></div>
           <h3>Виртуальная реальность</h3>
         </a>
       </li>
       <li>
-        <a href="#">
-          <div class="catalog-image-wrapper stick">
-            <img src="img/tel-holder.svg" width="86" height="117" alt="Моноподы для селфи">
-          </div>
+        <a class="catalog-product" href="#">
 
+          <div class="catalog-image-wrapper stick"></div>
           <h3>Моноподы<br> для селфи</h3>
         </a>
       </li>
       <li>
-        <a href="#">
-          <div class="catalog-image-wrapper camera">
-            <img src="img/camera.svg" width="71" height="87" alt="Экшн-камеры">
-          </div>
-
+        <a class="catalog-product" href="#">
+          <div class="catalog-image-wrapper camera"></div>
           <h3>Экшн-камеры</h3>
         </a>
       </li>
       <li>
-        <a href="#">
-          <div class="catalog-image-wrapper cardio">
-            <img src="img/cardio-watch.svg" width="107" height="65" alt="Фитнес-браслеты">
-          </div>
-
+        <a class="catalog-product" href="#">
+          <div class="catalog-image-wrapper cardio"></div>
           <h3>Фитнес-браслеты</h3>
         </a>
       </li>
       <li>
-        <a href="#">
-          <div class="catalog-image-wrapper watch">
-            <img src="img/watch.svg" width="56" height="98" alt="Умные часы">
-          </div>
-
+        <a class="catalog-product" href="#">
+          <div class="catalog-image-wrapper watch"></div>
           <h3>Умные часы</h3>
         </a>
       </li>
       <li>
-        <a href="#">
-          <div class="catalog-image-wrapper quatro">
-            <img src="img/quadcopter.svg" width="132" height="69" alt="Квадрокоптеры">
-          </div>
-
+        <a class="catalog-product" href="#">
+          <div class="catalog-image-wrapper quatro"></div>
           <h3>Квадрокоптеры</h3>
         </a>
       </li>
@@ -268,10 +262,10 @@
   <section class="wrapper">
     <h2 class="visually-hidden">Партнеры</h2>
     <div class="partners-holder">
-      <a href="#"><img src="img/logo-1-jpg.png" width="260" height="100" alt="Логотип партнера"></a>
-      <a href="#"><img src="img/logo-2-jpg.png" width="260" height="100" alt="Логотип партнера"></a>
-      <a href="#"><img src="img/logo-3-jpg.png" width="260" height="100" alt="Логотип партнера"></a>
-      <a href="#"><img src="img/logo-4-jpg.png" width="260" height="100" alt="Логотип партнера"></a>
+      <a href="#"><img src="img/logo-1-jpg.png" width="260" height="100" alt="Логотип партнера DJI"></a>
+      <a href="#"><img src="img/logo-2-jpg.png" width="260" height="100" alt="Логотип партнера SP Gadjets"></a>
+      <a href="#"><img src="img/logo-3-jpg.png" width="260" height="100" alt="Логотип партнера GO Pro"></a>
+      <a href="#"><img src="img/logo-4-jpg.png" width="260" height="100" alt="Логотип партнера VIVE"></a>
     </div>
   </section>
 
@@ -297,32 +291,13 @@
         <h2 class="section-title position">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.</p>
-        <div class="map-img">
+        <a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9,+15,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+119311/@55.687031,37.5274293,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54cf65f5c8955:0x694710ccd55501e!8m2!3d55.687031!4d37.529618" class="map-img" title="улица Строителей, строение 15, город Москва">
           <img src="img/map.jpg" width="560" height="222" alt="улица Строителей, строение 15, город Москва">
-        </div>
+        </a>
       </div>
 
       <a class="btn write-us" href="write-us.html"><span>Напишите нам</span></a>
 
-      <section class="hidden">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-
-        <div>
-          <button type="button">Закрыть</button>
-          <form class="feedback" action="#" method="post">
-            <label>Ваше имя:
-              <input type="text" name="feedback-name" placeholder="Имя Фамилия">
-            </label>
-            <label>Ваш e-mail:
-              <input type="email" name="feedback-email" placeholder="email@example.com">
-            </label>
-            <label>Текст письма:
-              <textarea name="feedback-text">В свободной форме</textarea>
-            </label>
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
-      </section>
     </div>
   </section>
 </main>
@@ -336,13 +311,13 @@
         </svg>
       </a>
       <ul class="footer-list part">
-        <li>
+        <li class="part-item">
           <a class="footer-link left-icon icon-user" href="#">Войти</a>
         </li>
-        <li>
+        <li class="part-item">
           <a class="footer-link left-icon icon-compare" href="#">Сравнить</a>
         </li>
-        <li>
+        <li class="part-item">
           <a class="footer-link left-icon icon-cart" href="#">Корзина</a>
         </li>
       </ul>
@@ -359,7 +334,7 @@
     </div>
 
     <div class="footer-row">
-      <ul class="footer-list social">
+      <ul class="social">
         <li>
           <a href="#"><img src="img/facebook.svg" width="32" height="32" alt="Facebook"></a>
         </li>
@@ -370,7 +345,7 @@
           <a href="#"><img src="img/twitter.svg" width="32" height="32" alt="Twitter"></a>
         </li>
       </ul>
-      <a href="#">
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" title="Профессиональный HTML и CSS, уровень 1">
         <svg class="html-fill" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
           <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
         </svg>
@@ -396,7 +371,7 @@
 <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <button class="modal-close map-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548883495!2d37.527423951680014!3d55.687030980440234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1583180569260!5m2!1sru!2sru" width="960" height="559"></iframe>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548883495!2d37.527423951680014!3d55.687030980440234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1583180569260!5m2!1sru!2sru" width="960" height="559"></iframe>
 </section>
 <script src="js/script.js"></script>
 </body>
