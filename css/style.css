@@ -561,7 +561,7 @@ input[type="radio"].visually-hidden {
 .partners-holder a {
   outline: none;
   -webkit-filter: grayscale(1);
-  filter: grayscale(1);
+  filter: /*grayscale(1);*/ gray;
   opacity: 0.2;
 }
 
