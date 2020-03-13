@@ -20,7 +20,7 @@ close.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('modal-show');
   popup.classList.remove('modal-error');
-  popup.classList.add('modal-close');
+  popup.classList.add('modal-exit');
 });
 
 form.addEventListener('submit', function (evt) {
