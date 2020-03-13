@@ -51,7 +51,7 @@ mapLink.addEventListener('click', function (evt) {
 mapClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   mapPopup.classList.remove('modal-show');
-  mapPopup.classList.add('modal-close');
+  mapPopup.classList.add('modal-exit');
 });
 
 for (let i = 0; i < offerBtns.length; i++) {

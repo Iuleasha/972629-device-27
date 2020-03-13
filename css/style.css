@@ -1973,7 +1973,7 @@ input[type="radio"].visually-hidden {
 .modal-exit {
   display: block;
   animation: exit 0.4s;
-  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 @-webkit-keyframes bounce {
   0% {
@@ -2063,20 +2063,11 @@ input[type="radio"].visually-hidden {
   }
 }
 @keyframes exit {
-  0% {
-    transform: translateY(0);
-  }
+  0%{
+transform: translate(-50%, -50%);
+}
 
-  70% {
-    transform: translateY(-30px);
-  }
-
-  90% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(2000px);
-    display: none;
+100% {
+  transform: translate(-50%, -2000px);
   }
 }
