@@ -517,6 +517,33 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+.delivery-content:after{
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.delivery-img:after {
+  margin-top: -15px;
+  width: 136px;
+  height: 164px;
+  background-image: url(../img/delivery.svg);
+}
+
+.warranty-img:after {
+  margin-top: -38px;
+  width: 171px;
+  height: 194px;
+  background-image: url(../img/warranty.svg);
+}
+
+.credit-img:after {
+  margin-top: -35px;
+  width: 156px;
+  height: 186px;
+  background-image: url(../img/credit.svg);
+}
+
 .delivery-info {
   margin-top: -27px;
   margin-left: 118px;
@@ -527,18 +554,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.15px;
   text-align: left;
   margin-left: -2px;
-}
-
-.delivery-img {
-  margin-top: -15px;
-}
-
-.warranty-img {
-  margin-top: -38px;
-}
-
-.credit-img {
-  margin-top: -35px;
 }
 
 .delivery-info h2 {
