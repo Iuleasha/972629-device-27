@@ -1491,7 +1491,7 @@ input[type="radio"].visually-hidden {
 .catalog-item.new:before {
   content: "NEW";
   color: rgba(0, 0, 0, 0.2);
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 1.71;
