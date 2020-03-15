@@ -572,18 +572,34 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 }
 
-.colored-img {
-  display: none;
+.partner img {
+  opacity: 0;
 }
 
-.partner:focus .black-img,
-.partner:hover .black-img {
-  display: none;
+.partner:focus img,
+.partner:hover img {
+  opacity: 1;
 }
 
-.partner:focus .colored-img,
-.partner:hover .colored-img {
-  display: block;
+.partner-1 {
+  background-image: url(../img/logo-1-black.png);
+}
+
+.partner-2 {
+  background-image: url(../img/logo-2-black.png);
+}
+
+.partner-3 {
+  background-image: url(../img/logo-3-black.png);
+}
+
+.partner-4 {
+  background-image: url(../img/logo-4-black.png);
+}
+
+.partner:focus,
+.partner:hover {
+  background-image: none;
 }
 
 .line-block:before {
