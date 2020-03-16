@@ -332,7 +332,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   left: 0;
   padding: 28px 60px;
-  z-index: 3;
+  z-index: 4;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -517,29 +517,29 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.delivery-content:after{
-  content: '';
+.delivery-content:after {
+  content: "";
   display: block;
   background-repeat: no-repeat;
 }
 
 .delivery-img:after {
   margin-top: -15px;
-  width: 136px;
+  min-width: 136px;
   height: 164px;
   background-image: url(../img/delivery.svg);
 }
 
 .warranty-img:after {
   margin-top: -38px;
-  width: 171px;
+  min-width: 171px;
   height: 194px;
   background-image: url(../img/warranty.svg);
 }
 
 .credit-img:after {
   margin-top: -35px;
-  width: 156px;
+  min-width: 156px;
   height: 186px;
   background-image: url(../img/credit.svg);
 }
@@ -741,19 +741,21 @@ input[type="radio"].visually-hidden {
 
 .slide-quatro {
   padding-left: 5px;
-  padding-right: 60px;
+  padding-right: 52px;
   padding-bottom: 5px;
 }
 
 .selfie-img {
   margin-right: 125px;
   width: 384px;
+  min-width: 384px;
   height: 486px;
 }
 
 .clock-img {
   margin-right: 160px;
   width: 345px;
+  min-width: 345px;
   height: 485px;
 }
 
@@ -762,6 +764,7 @@ input[type="radio"].visually-hidden {
   margin-top: 60px;
   margin-left: 10px;
   width: 526px;
+  min-width: 526px;
   height: 334px;
 }
 
